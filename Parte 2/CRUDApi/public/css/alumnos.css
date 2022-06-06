@@ -1,0 +1,89 @@
+:root {
+    --primary-color: white;
+    --secondary-color: rgb(61, 68, 73);
+    --highlight-color: #3282b8;
+    --dt-status-available-color: greenyellow;
+    --dt-status-away-color: lightsalmon;
+    --dt-status-offline-color: lightgray;
+    --dt-padding: 12px;
+    --dt-padding-s: 6px;
+    --dt-padding-xs: 2px;
+    --dt-border-radius: 3px;
+    --dt-background-color-container: #2a3338;
+    --dt-border-color: var(--secondary-color);
+    --dt-bg-color: var(--highlight-color);
+    --dt-text-color: var(--primary-color);
+    --dt-bg-active-button: var(--highlight-color);
+    --dt-text-color-button: var(--primary-color);
+    --dt-text-color-active-button: var(--highlight-color);
+    --dt-hover-cell-color: var(--highlight-color);
+    --dt-even-row-color: var(--secondary-color);
+    --dt-focus-color: var(--highlight-color);
+    --dt-input-background-color: var(--secondary-color);
+    --dt-input-color: var(--primary-color);
+}
+
+.datatable-container {
+    font-family: 'Noto Sans', sans-serif;
+    background-color: var(--dt-background-color-container);
+    border-radius: var(--dt-border-radius);
+    color: var(--dt-text-color);
+    width: 600px;
+    margin: 0 auto;
+    font-size: 12px;
+}
+
+.datatable-container .header-tools {
+    border-bottom: solid 1px var(--dt-border-color);
+    padding: var(--dt-padding);
+    display: flex;
+    align-items: baseline;
+}
+
+.datatable-container .header-tools .search {
+    width: 30%;
+    margin-left: 70%;
+}
+
+.datatable-container .header-tools .search .search-input {
+    width: 100%;
+    background-color: var(--dt-input-background-color);
+    display: block;
+    box-sizing: border-box;
+    border-radius: var(--dt-border-radius);
+    border: solid1px var(--dt-border-color);
+    color: var(--dt-input-color);
+}
+
+.datatable-container .header-tools .tools {
+    width: 70%;
+}
+
+.datatable-container .datatable {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.datatable-container .datatable,
+#data th,
+#data td {
+    padding: var(--dt-padding) var(--dt-padding);
+}
+
+#data th {
+    font-weight: bolder;
+    text-align: left;
+    border-bottom: solid 1px var(--dt-border-color);
+}
+
+#data td {
+    border-bottom: solid 1px var(--dt-border-color);
+}
+
+#data tr:nth-child(even) {
+    background-color: var(--dt-even-row-color);
+}
+
+#data tr:hover {
+    background-color: var(--dt-hover-cell-color);
+}
